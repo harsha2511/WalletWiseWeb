@@ -1,0 +1,77 @@
+@charset "UTF-8";
+/*!
+ * animate.css - https://animate.style/
+ * Version - 4.1.0
+ * Licensed under the MIT license - http://opensource.org/licenses/MIT
+ *
+ * Copyright (c) 2020 Animate.css
+ */
+
+:root {
+  --animate-duration: 0.4s;
+  --animate-delay: 0.1s;
+  --animate-repeat: 1;
+  /* --animate-duration: 0.5s; All delay classes will take half the time to start */
+  --animate-delay: 2s;
+  /* All animations will take twice as long to finish*/
+}
+
+.animate__animated {
+  --animate-duration: 2s;
+  /* animation: lightSpeedInLeft; */
+}
+
+.my-element1 {
+  /* display: inline-block; */
+  animation-delay: 5s;
+  margin: 0 0.5rem;
+  animation: lightSpeedInLeft;
+  /* referring directly to the animation's @keyframe declaration */
+  animation-duration: 2s;
+  /* don't forget to set a duration! */
+}
+
+.my-element2 {
+  /* --animate-repeat: 2; */
+  /* display: inline-block; */
+  /* animation-delay: 5s; */
+  margin: 0 0.5rem;
+  animation: lightSpeedInRight;
+  /* referring directly to the animation's @keyframe declaration */
+  animation-duration: 2s;
+}
+
+.img1 {
+  /* animation-delay: 5s; */
+  /* --animate-repeat: 2; */
+  /* display: inline-block; */
+  /* --animate-delay: 3s; */
+  /* margin: 0 0.5rem; */
+  animation: zoomInDown;
+  /* referring directly to the animation's @keyframe declaration */
+  animation-duration: 2s;
+}
+
+.item-content {
+  animation-delay: 5s;
+  animation: lightSpeedInRight;
+  animation-duration: 2s;
+}
+
+#imageanimation {
+  animation-delay: 5s;
+  animation: fadeIn;
+  animation-duration: 2s;
+}
+
+#icons {
+  animation: zoomInDown;
+  animation-duration: 2s;
+}
+
+.log {
+  /* animation: bounce; */
+  /* animation: flash; */
+  animation: zoomInDown;
+  animation-duration: 2s;
+}
