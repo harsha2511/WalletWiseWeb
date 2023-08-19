@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Input Table Example</title>
+    <style>
+        table {
+            border: 1px solid black;
+            margin: 0 auto;
+            width: 400px;
+            height: 300px;
+        }
+        th, td {
+            padding: 10px;
+            text-align: left;
+            width: 50%;
+            font-size: 16px; /* Increase font size */
+        }
+        input[type="text"] {
+            width: 100%; /* Increase input box width */
+            font-size: 14px; /* Increase input font size */
+            padding: 5px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+        <div class="logo">
+          <img id="wwlogo" src="images/wwwlogo.png" alt="logo">
+        </div>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="login.html">Sign In</a></li>
+            <li><a href="page1.html">Go back</a></li>
+        </ul>
+      
+    </nav>
+
+  </header>
+<table>
+    <thead>
+        <tr>
+            <th colspan="2">Actual Expenditure</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td><label for="Week1">Week 1:</label></td>
+            <td><input type="text" id="Week1"></td>
+        </tr>
+        <tr>
+            <td><label for="Week2">Week 2:</label></td>
+            <td><input type="text" id="Week2"></td>
+        </tr>
+        <tr>
+            <td><label for="Week3">Week 3:</label></td>
+            <td><input type="text" id="Week3"></td>
+        </tr>
+        <tr>
+            <td><label for="Week4">Week 4:</label></td>
+            <td><input type="text" id="Week4"></td>
+        </tr>
+    </tbody>
+</table>
+
+</body>
+</html>

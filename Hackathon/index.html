@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Get started</title>
+    <link rel="stylesheet" href="getStartedStyle.css">
+    <link rel="icon" href="Images/logo2.jpeg" type="image/x-icon">
+</head>
+
+<body>
+    <script src="https://kit.fontawesome.com/f7cd8e62a5.js" crossorigin="anonymous"></script>
+    <section class="firstSection">
+        <div class="leftNav">
+            <img id="wwlogo" src="images/wwwlogo.png" alt="logo">
+            <h1>WalletWiseWeb</h1>
+        </div>
+        <div class="rightNav">
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html" target="_blank">About us</a></li>
+                    <li><a href="login.html">login/Sign-up</a></li>
+                </ul>
+            </nav>
+        </div>
+    </section>
+    <section class="content">
+        <div class="leftContent">
+            <div>Learn how to save your money and essential skill budgeting</div>
+            <div class="typedText"><span id="element"></span></div>
+            <hr>
+            <div class="start">
+                <!-- <a href="login.html" target="_blank"> -->
+                <a href="login.html">
+                    Get started &#8594
+                    <!-- <i class="fa-solid fa-arrow-right"></i> -->
+                </a> 
+            </div>
+        </div>
+        <div class="rightContent">
+            <img id="index-img" src="images/logo2.jpeg" alt="img">
+        </div>
+    </section>
+
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+
+    <script>
+        var typed = new Typed('#element', {
+          strings: ['Master your money', 'Shape your future!'],
+          typeSpeed: 50,
+        });
+      </script>
+</body>
+
+</html>

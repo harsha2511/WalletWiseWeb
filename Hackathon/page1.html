@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Monthly Money Management for Teens (INR)</title>
+    <link rel="stylesheet" href="getStartedStyle.css">
+    <link rel="icon" href="Images/logo2.jpeg" type="image/x-icon">
+
+  <link rel="stylesheet" href="styles/login.css">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="icon" href="Images/logo2.jpeg" type="image/x-icon">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: black;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            background-color: rgb(157, 156, 156);
+        }
+
+        .savings-box {
+            background-color: #020b15;
+            padding: 10px;
+            text-align: center;
+            margin-top: 10px;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+            background-color: black;
+        }
+        p a{
+            color: black;
+            font-size: 25px;
+            font-weight: bold;
+        }
+        p a:hover{
+            color: black;
+            font-size: 30px;
+            font-weight: bold;
+        }
+        th,
+        td {
+            padding: 10px;
+            border: 1px solid #ddd;
+            text-align: center;
+            background-color: black;
+        }
+        #heading1{
+            color: black;
+        }
+        #expense{
+            color: black;
+            font-size: 25px;
+            font-weight: bold;
+            color: black;
+            margin: 5px;
+            padding: 10px;
+            background-color: white;
+            font-size: larger;
+            border:1px solid black;
+            font-weight: 100;
+            border-radius: 30px;
+        }
+    </style>
+</head>
+
+<body>
+  <p id="expense"><a href="http://127.0.0.1:5500/addingexpense.html">Add Your weekly expenses here</a> </p>
+    <div class="container">
+        <h2 id="heading1">Monthly Money Management for Teens (INR)</h2>
+        <label for="totalAmount">Total Amount (INR):</label>
+        <input type="number" id="totalAmount" placeholder="Enter total amount">
+        <label for="savingsPercentage">Savings Percentage (%):</label>
+        <input type="number" id="savingsPercentage" placeholder="Enter savings percentage" min="0" max="100">
+        <button onclick="generateTable()">Generate Table</button>
+        <div class="savings-box" id="savingsBox"></div>
+        <div id="tableContainer"></div>
+    </div>
+
+    <script>
+        function generateTable() {
+            const totalAmount = parseFloat(document.getElementById('totalAmount').value);
+            if (isNaN(totalAmount) || totalAmount <= 0) {
+                alert('Please enter a valid total amount.');
+                return;
+            }
+
+            const savingsPercentage = parseFloat(document.getElementById('savingsPercentage').value);
+            if (isNaN(savingsPercentage) || savingsPercentage < 0 || savingsPercentage > 100) {
+                alert('Please enter a valid savings percentage between 0 and 100.');
+                return;
+            }
+
+            const savings = (totalAmount * savingsPercentage) / 100;
+            const remainingAmount = totalAmount - savings;
+            const weeklyAmount = remainingAmount / 4;
+
+            const savingsBox = document.getElementById('savingsBox');
+            savingsBox.innerHTML = `Total Savings: &#8377;${savings.toFixed(2)}`;
+            
+
+            const tableContainer = document.getElementById('tableContainer');
+            tableContainer.innerHTML = '';
+
+            const weeks = ['Week 1', 'Week 2', 'Week 3', 'Week 4'];
+
+            const table = document.createElement('table');
+            const headerRow = table.insertRow();
+            headerRow.innerHTML = `
+                <th>Week</th>
+                <th>Equally Divided Amount (INR)</th>
+                
+            `;
+            
+
+            for (let i = 0; i < weeks.length; i++) {
+                const row = table.insertRow();
+                
+                row.innerHTML = `
+                    <td>${weeks[i]}</td>
+                    <td>&#8377;${weeklyAmount.toFixed(2)}</td>
+                  
+                `;
+                
+            }
+            tableContainer.appendChild(table);
+        }
+      
+
+    </script>
+    <a href="table2.html" id="expense">add your weekly actual expenses</a>
+</body>
+
+</html>

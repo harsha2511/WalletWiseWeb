@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Expense Tracker</title>
+    <link rel="stylesheet" href="getStartedStyle.css">
+    <link rel="icon" href="Images/logo2.jpeg" type="image/x-icon">
+    <link rel="stylesheet" href="styles/login.css">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="Images/logo2.jpeg" type="image/x-icon">
+    <style>
+        th,
+        td {
+            padding: 10px;
+            border: 1px solid #ddd;
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <header>
+            <nav class="navbar">
+            <div class="logo">
+              <img id="wwlogo" src="images/wwwlogo.png" alt="logo">
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="login.html">Sign In</a></li>
+                <li><a href="page1.html">Go back</a></li>
+            </ul>
+          
+        </nav>
+    
+      </header>
+    <h1>Expense Tracker</h1>
+    <div>
+        <label for="expenseName">Expense Name:</label>
+        <input type="text" id="expenseName">
+        <label for="expenseAmount">Expense Amount:</label>
+        <input type="number" id="expenseAmount">
+        <button onclick="addExpense()">Add Expense</button>
+    </div>
+    <table id="expenseTable">
+        <thead>
+            <tr>
+                <th>Expense Name</th>
+                <th>Expense Amount</th>
+            </tr>
+        </thead>
+        <tbody id="expenseTableBody">
+            <!-- Table rows will be generated here -->
+        </tbody>
+    </table>
+
+    <script>
+        const expenses = [];
+
+        function addExpense() {
+            const expenseName = document.getElementById('expenseName').value;
+            const expenseAmount = parseFloat(document.getElementById('expenseAmount').value);
+
+            if (expenseName && !isNaN(expenseAmount)) {
+                expenses.push({ name: expenseName, amount: expenseAmount });
+                updateExpenseTable();
+            } else {
+                alert('Please enter valid expense name and amount.');
+            }
+        }
+
+        function updateExpenseTable() {
+            const tableBody = document.getElementById('expenseTableBody');
+            tableBody.innerHTML = '';
+
+            for (const expense of expenses) {
+                const row = document.createElement('tr');
+                const nameCell = document.createElement('td');
+                const amountCell = document.createElement('td');
+
+                nameCell.textContent = expense.name;
+                amountCell.textContent = expense.amount.toFixed(2);
+
+                row.appendChild(nameCell);
+                row.appendChild(amountCell);
+
+                tableBody.appendChild(row);
+            }
+        }
+    </script>
+
+</body>
+
+</html>

@@ -1,0 +1,56 @@
+<html>
+    <head><link rel="stylesheet" href="getStartedStyle.css">
+    <link rel="icon" href="Images/logo2.jpeg" type="image/x-icon">
+    <link rel="icon" href="Images/logo2.jpeg" type="image/x-icon">
+
+  <link rel="stylesheet" href="styles/login.css">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="icon" href="Images/logo2.jpeg" type="image/x-icon">
+</head>
+    <body>
+
+        <header>
+            <nav class="navbar">
+            <div class="logo">
+              <img id="wwlogo" src="images/wwwlogo.png" alt="logo">
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="login.html">Sign In</a></li>
+                <li><a href="page1.html">Go back</a></li>
+            </ul>
+          
+        </nav>
+    
+      </header>
+        <div class="vertical">
+    <div class="block">
+        <label for="week1">Week1: </label>
+        <input type="number" id="week1">
+        <br>
+        <label for="week2">Week2: </label>
+        <input type="number" id="week2">
+        <br>
+        <label for="week3">Week3: </label>
+        <input type="number" id="week3">
+        <br>
+        <label for="week4">Week4: </label>
+        <input type="number" id="week4">
+    </div>
+</div>
+<script>function loadTable() {
+        for (var i = 0; i < users.length; i++) {
+            var row = "<tr>"; 
+
+            for (var j = 0; j < users[i].length; j++) {
+                var cellContent = users[i][j]; 
+                row += "<td>" + cellContent + "</td>"; 
+            }
+
+            row += "</tr>"; 
+            $("#items_tbody").append(row); 
+        }
+    }</script>
+</body>
+</html>

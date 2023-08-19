@@ -1,0 +1,110 @@
+body{
+    background: linear-gradient(30deg, rgb(233, 249, 155), rgb(202,243,240),rgb(173, 242, 181) );
+    /* background: linear-gradient(45deg, black, black); */
+    /* background-color: black; */
+}
+
+main{
+    width: 800px;
+    margin:200px auto 72px auto;
+    /* background-color: rgb(219,108,94); */
+    /* background-color: rgb(248, 104, 104); */
+    background-color: white;
+    padding: 24px;
+    border: 5px solid rgb(44,44,44);
+    border-radius: 8px;
+    box-shadow: 1px 2px 8px rgba(239, 239, 237, 0.3);
+}
+#imageanimation {
+    width: 200px;
+    height: 200px;
+    border-radius: 100px;
+    border: 5px solid rgba(44, 44, 44, 0.8);
+    /* border: 5px solid rgb(44,44,44); */
+    margin-top: -134px;
+}
+h1{
+    font-size: 30px;
+    color: rgb(31,25,25);
+}
+a {
+    color: rgb(73,29,58);
+}
+span{
+    color:rgb(66,2,2);
+}
+
+#todays-challenge{
+    color:rgb(75,59,59);
+    font-weight: bold;
+    font-size: 52px;
+}
+body {
+    background-color: rgb(233, 215, 207);
+    text-align: center;
+    color: rgb(83, 75, 75);
+    margin: 50px;
+}
+
+h1 {
+    font-family: 'Oswald', sans-serif;
+}
+
+p {
+    font-family: 'Fira Sans', sans-serif;
+    font-size: 24px;
+    /* margin: 4px 8px 5px 8px; */
+    /* margin-bottom: 36px; */
+    /* color: rgb(83,75,75); */
+}
+
+a {
+    font-family: 'Fira Sans', sans-serif;
+    text-decoration: none;
+    color: rgb(167,1,78);
+}
+
+a:hover{
+    text-decoration: underline;
+}
+
+#hero-content a{
+    text-decoration: none;
+    background-color: rgb(255,251,0);
+    padding: 12px 24px;
+    color: black;
+    font-size: 24px;
+    font-weight: bold;
+    border-radius: 8px;
+    box-shadow: 2px 4px 8px rgb(68,67,67);
+}
+
+.log{
+    /* margin-bottom: 100px; */
+    text-decoration: none;
+    background-color: rgb(255,251,0);
+    padding: 12px 24px;
+    color: black;
+    font-size: 24px;
+    font-weight: bold;
+    border-radius: 8px;
+    box-shadow: 2px 4px 8px rgb(68,67,67);
+}
+
+.log1 a:hover{
+    background-color: rgb(255,238,0);
+    text-decoration: none;
+}
+
+.heading{
+    font-size: 40px;
+}
+
+#imglogo{
+    height: 50px;
+}
+
+.headnav{
+    font-size: larger;
+    color: aqua;
+}

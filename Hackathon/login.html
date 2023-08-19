@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles/login.css">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="icon" href="Images/logo2.jpeg" type="image/x-icon">
+  <title>Login and Sign Up</title>
+</head>
+<body>
+
+  <header>
+        <nav class="navbar">
+        <div class="logo">
+          <img id="wwlogo" src="images/wwwlogo.png" alt="logo">
+        </div>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <!-- <li><a href="#">Services</a></li> -->
+            <li><a href="login.html">login/Sign-up</a></li>
+        </ul>
+      
+    </nav>
+  </header>
+  <main>
+    <div class="container">
+      <div class="form-container sign-in-container">
+        <form action="#">
+          <h1>Sign In</h1>
+          <input  id="text1" type="email" placeholder="Email" /><br><br>
+          <input  id="text1" type="password" placeholder="Password" /><br><br>
+          <!-- <p><a id="goback" href="home.html">Go back</p> -->
+          <a href="page1.html" class="sign12" id="signIn">Sign In</a>
+        </form>
+      </div>
+      <div class="form-container sign-up-container">
+        <form action="#">
+          <h1>Sign Up</h1>
+          <input id="text2" type="text" placeholder="Full Name" /><br><br>
+          <input  id="text2" type="email" placeholder="Email" /><br><br>
+          <input  id="text2" type="password" placeholder="Password" /><br><br>
+          <button>Sign Up</button>
+        </form>
+      </div>
+      <div class="overlay-container">
+        <div class="overlay">
+          <div class="overlay-panel overlay-left">
+            <img id="image1" src="images/logo2.jpeg" alt="image">
+            <h1>Welcome Back!</h1>
+            <p>To keep connected, please log in with your personal info.</p>
+            <button class="ghost" id="signIn">Sign In</button>
+          </div>
+          <div class="overlay-panel overlay-right">
+            <img id="image1" src="images/logo2.jpeg" alt="image">
+            <h1>Hello, Friend!</h1>
+            <p>Enter your personal details and start your journey with us.</p>
+            <button class="ghost" id="signUp">Sign Up</button>
+            <!-- <p><a id="goback" href="index.html"> &#8592 Go back</p> -->
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+  <script src="script.js"></script>
+</body>
+
+</html>
