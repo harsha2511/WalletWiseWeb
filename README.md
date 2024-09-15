@@ -33,6 +33,6 @@ To get started with WalletWiseWeb:
  npm start
 
 
-Contribution
+## Contribution:
 Feel free to contribute to WalletWiseWeb by opening issues or submitting pull requests. We welcome all improvements and new ideas to make this project even better!
 
