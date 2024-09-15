@@ -29,8 +29,8 @@ To get started with WalletWiseWeb:
 3. Install the necessary dependencies:
    npm install
 
-4.Run the application :
- npm start
+4. Run the application :
+   npm start
 
 
 ## Contribution:
