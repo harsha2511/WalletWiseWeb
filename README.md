@@ -16,7 +16,7 @@ WalletWiseWeb is a financial management web application designed to help users t
 - **Database**: MongoDB
 - **Version Control**: Git, GitHub
 
-## Getting Started
+## Getting Started:
 
 To get started with WalletWiseWeb:
 
